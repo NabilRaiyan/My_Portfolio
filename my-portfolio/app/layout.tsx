@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Raiyan Al Sultan",
+  title: "Raiyan | Full Stack developer",
   description: "Full Stack developer",
 };
 
