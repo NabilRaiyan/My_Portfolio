@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <main>
-      <div className="">Hello form Raiyan</div>
+      <div className="font-sans">Hello form Raiyan</div>
     </main>
   );
 }
