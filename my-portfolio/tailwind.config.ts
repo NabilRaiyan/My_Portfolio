@@ -12,6 +12,11 @@ export default {
         black: {
           DEFAULT: '#000',
           100: '#000319'
+        },
+
+        bg: {
+          DEFAULT: '#f3f3f3',
+          100: '#f3f3fa'
         }
       },
     },
