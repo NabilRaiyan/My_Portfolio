@@ -57,7 +57,7 @@ const Hero = () => {
             />
 
             {/* Social media div */}
-            <div className="flex flex-row gap-2 top-[50px] fixed sm:justify-center sm:items-center">
+            <div className="flex flex-row gap-2 top-[50px] fixed sm:justify-center sm:items-center left-16">
                 <div>
                     <SocialMediaBtn link="https://github.com/NabilRaiyan" icon={<FaGithub />} />
                 </div>
@@ -73,9 +73,10 @@ const Hero = () => {
             </div>
 
             {/* greet and intro section */}
-            <h1 className="text-4xl sm:text-[7rem] md:text-[7.2rem] font-poppins font-extralight text-white text-center">
+            <h1 className="text-4xl sm:text-6xl md:text-[7.2rem] lg:text-8xl xl:text-[9rem] font-poppins font-extralight text-white text-center mt-5">
                 Hello
             </h1>
+
             <div className="w-full h-16 overflow-hidden">
             <TypewriterEffect words={intro} />
             </div>
