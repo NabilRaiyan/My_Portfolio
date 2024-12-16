@@ -2,13 +2,9 @@ import React from "react";
 import { TypewriterEffect } from "./ui/typewriter-effect";
 import Image from "next/image";
 import { Spotlight } from "./ui/Spotlight";
+import CustomButton from "./ui/CustomButton";
 const Hero = () => {
 
-    const greeting = [
-        {
-          text: "Hello",
-        },
-      ];
 
     const intro = [
         {
@@ -51,6 +47,8 @@ const Hero = () => {
             <div className="w-full h-16 overflow-hidden">
             <TypewriterEffect words={intro} />
             </div>
+            <CustomButton />
+
         </div>
 
         {/* Second Div */}
@@ -63,6 +61,7 @@ const Hero = () => {
             className="object-cover sm:w-[400px] sm:h-[400px] md:w-[550px] md:h-[550px]"
             />
         </div>
+
     </div>
     )
 }

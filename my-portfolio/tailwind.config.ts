@@ -8,25 +8,26 @@ export default {
   ],
   theme: {
     extend: {
-      
       colors: {
         black: {
-          DEFAULT: '#000',
-          100: '#000319'
+          DEFAULT: "#000",
+          100: "#000319",
         },
-
         bg: {
-          DEFAULT: '#f3f3f3',
-          100: '#f3f3fa'
-        }
+          DEFAULT: "#f3f3f3",
+          100: "#f3f3fa",
+        },
       },
+
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
 
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        shimmer: "shimmer 2s linear infinite",
       },
+
       keyframes: {
         spotlight: {
           "0%": {
@@ -35,7 +36,15 @@ export default {
           },
           "100%": {
             opacity: 1,
-            transform: "translate(-50%,-40%) scale(1.1)",
+            transform: "translate(-50%, -40%) scale(1.1)",
+          },
+        },
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
           },
         },
       },
