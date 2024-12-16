@@ -5,4 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
+#line{
+    background-color: orange;
+    width: 0.7px;
+    height: 60%;
+}
