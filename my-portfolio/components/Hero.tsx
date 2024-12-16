@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
+import { FaGithub, FaFacebook, FaLinkedin, FaMedium } from "react-icons/fa";
 const Hero = () => {
 
 
@@ -46,17 +47,33 @@ const Hero = () => {
             {/* horizontal row and bubble  */}
             <hr className="fixed left-10 top-[320px] transform -translate-y-1/2 w-1/2 md:w-1/3" id="line" />
             <div
-                className="absolute left-[30.6rem] top-[200px] w-2 h-2 bg-cyan-100 rounded-full animate-movePingPong1"
+                className="fixed left-[29.6rem] top-[200px] w-2 h-2 bg-cyan-100 rounded-full animate-movePingPong1"
             />
             <div
-                className="absolute left-[10.6rem] top-[300px] w-2 h-2 bg-purple-400 rounded-full animate-movePingPong2"
+                className="fixed left-[10.6rem] top-[300px] w-2 h-2 bg-purple-400 rounded-full animate-movePingPong2"
             />
             <div
-                className="absolute left-[20.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong3"
+                className="fixed left-[20.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong3"
             />
 
+            {/* Social media div */}
+            <div className="flex flex-row gap-2 top-[50px] fixed sm:justify-center sm:items-center">
+                <div>
+                    <SocialMediaBtn link="https://github.com/NabilRaiyan" icon={<FaGithub />} />
+                </div>
+                <div>
+                    <SocialMediaBtn link="https://www.facebook.com/" icon={<FaFacebook />} />
+                </div>
+                <div>
+                    <SocialMediaBtn link="www.linkedin.com/in/raiyan-al-sultan-45b2b7258" icon={<FaLinkedin />} />
+                </div>
+                <div>
+                    <SocialMediaBtn link="https://medium.com/@raiyanalsultan" icon={<FaMedium />} />
+                </div>
+            </div>
+
             {/* greet and intro section */}
-            <h1 className="text-4xl sm:text-5xl md:text-[7.2rem] font-poppins font-extralight text-white text-center">
+            <h1 className="text-4xl sm:text-[7rem] md:text-[7.2rem] font-poppins font-extralight text-white text-center">
                 Hello
             </h1>
             <div className="w-full h-16 overflow-hidden">
@@ -78,8 +95,9 @@ const Hero = () => {
             className="object-cover sm:w-[400px] sm:h-[400px] md:w-[550px] md:h-[550px]"
             />
         </div>
-
     </div>
+
+
     )
 }
 
