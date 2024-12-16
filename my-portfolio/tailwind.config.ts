@@ -26,6 +26,7 @@ export default {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
+        movePingPong: "movePingPong 2s ease-in-out infinite",
       },
 
       keyframes: {
@@ -46,6 +47,18 @@ export default {
           to: {
             backgroundPosition: "-200% 0",
           },
+        },
+
+        movePingPong: {
+          "0%": {
+              transform: "translateY(0)",
+            },
+            "50%": {
+              transform: "translateY(100%)",
+            },
+            "100%": {
+              transform: "translateY(0)",
+            },
         },
       },
     },

@@ -6,6 +6,7 @@ import CustomButton from "./ui/CustomButton";
 const Hero = () => {
 
 
+    // intro text
     const intro = [
         {
             text: "-"
@@ -32,6 +33,7 @@ const Hero = () => {
 
     return (
         <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8">
+        {/* Adding spotlight */}
         <Spotlight 
             className="md:left-36 md:-top-10 top-100 -left-4"
             fill="rgba(180, 180, 180, 0.8)" // solid smoke color
@@ -41,8 +43,17 @@ const Hero = () => {
         {/* First Div */}
         <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center p-4">
             <hr className="fixed left-10 top-[320px] transform -translate-y-1/2 w-1/2 md:w-1/3" id="line" />
-            <h1 className="text-4xl sm:text-5xl md:text-[6.5rem] font-poppins font-extralight text-white text-center">
-            Hello
+            <div
+                className="absolute left-[2.6rem] top-[200px] w-2 h-2 bg-cyan-100 rounded-full animate-movePingPong"
+            />
+            <div
+                className="absolute left-[2.6rem] top-[300px] w-2 h-2 bg-purple-400 rounded-full animate-movePingPong"
+            />
+            <div
+                className="absolute left-[2.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong"
+            />
+            <h1 className="text-4xl sm:text-5xl md:text-[7.2rem] font-poppins font-extralight text-white text-center">
+                Hello
             </h1>
             <div className="w-full h-16 overflow-hidden">
             <TypewriterEffect words={intro} />
