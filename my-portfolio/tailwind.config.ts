@@ -26,7 +26,10 @@ export default {
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
-        movePingPong: "movePingPong 2s ease-in-out infinite",
+        movePingPong1: "movePingPong1 3s ease-in-out infinite",
+        movePingPong2: "movePingPong2 2s ease-in-out infinite",
+        movePingPong3: "movePingPong3 3s ease-in-out infinite",
+
       },
 
       keyframes: {
@@ -49,7 +52,31 @@ export default {
           },
         },
 
-        movePingPong: {
+        movePingPong1: {
+          "0%": {
+              transform: "translateY(0)",
+            },
+            "50%": {
+              transform: "translateY(100%)",
+            },
+            "100%": {
+              transform: "translateY(0)",
+            },
+        },
+
+        movePingPong2: {
+          "0%": {
+              transform: "translateY(0)",
+            },
+            "60%": {
+              transform: "translateY(60%)",
+            },
+            "100%": {
+              transform: "translateY(0)",
+            },
+        },
+
+        movePingPong3: {
           "0%": {
               transform: "translateY(0)",
             },

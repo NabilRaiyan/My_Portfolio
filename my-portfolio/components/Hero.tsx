@@ -3,6 +3,7 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 import Image from "next/image";
 import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
+import SocialMediaBtn from "./ui/SocialMediaBtn";
 const Hero = () => {
 
 
@@ -42,16 +43,19 @@ const Hero = () => {
 
         {/* First Div */}
         <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center p-4">
+            {/* horizontal row and bubble  */}
             <hr className="fixed left-10 top-[320px] transform -translate-y-1/2 w-1/2 md:w-1/3" id="line" />
             <div
-                className="absolute left-[2.6rem] top-[200px] w-2 h-2 bg-cyan-100 rounded-full animate-movePingPong"
+                className="absolute left-[30.6rem] top-[200px] w-2 h-2 bg-cyan-100 rounded-full animate-movePingPong1"
             />
             <div
-                className="absolute left-[2.6rem] top-[300px] w-2 h-2 bg-purple-400 rounded-full animate-movePingPong"
+                className="absolute left-[10.6rem] top-[300px] w-2 h-2 bg-purple-400 rounded-full animate-movePingPong2"
             />
             <div
-                className="absolute left-[2.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong"
+                className="absolute left-[20.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong3"
             />
+
+            {/* greet and intro section */}
             <h1 className="text-4xl sm:text-5xl md:text-[7.2rem] font-poppins font-extralight text-white text-center">
                 Hello
             </h1>
