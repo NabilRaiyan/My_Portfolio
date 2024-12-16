@@ -34,19 +34,21 @@ const Hero = () => {
         <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8">
         <Spotlight 
             className="md:left-36 md:-top-10 top-100 -left-4"
-            fill="rgba(180, 180, 180, 0.9)" // solid smoke color
+            fill="rgba(180, 180, 180, 0.8)" // solid smoke color
         />
 
 
         {/* First Div */}
         <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center p-4">
-            <hr className="absolute left-10" id="line"/>
+            <hr className="fixed left-10 top-[320px] transform -translate-y-1/2 w-1/2 md:w-1/3" id="line" />
             <h1 className="text-4xl sm:text-5xl md:text-[6.5rem] font-poppins font-extralight text-white text-center">
             Hello
             </h1>
             <div className="w-full h-16 overflow-hidden">
             <TypewriterEffect words={intro} />
             </div>
+
+            {/* Custom Button */}
             <CustomButton />
 
         </div>
