@@ -13,7 +13,7 @@ import {
 import { LampContainer } from "./ui/lamp";
 
     const Skeleton = () => (
-        <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-black dark:bg-black"></div>    );
+        <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2] bg-black dark:bg-black"></div>);
     const items = [
         {
         title: "The Dawn of Innovation",
@@ -58,7 +58,7 @@ import { LampContainer } from "./ui/lamp";
                         duration: 0.8,
                         ease: "easeInOut",
                 }}
-                className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-medium tracking-tight text-transparent md:text-6xl"
+                className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-poppins tracking-tight text-transparent md:text-6xl"
                 >
                 My Tech <br /> Stack
                 </motion.h1>
