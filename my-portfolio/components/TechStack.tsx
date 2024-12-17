@@ -58,7 +58,7 @@ import { LampContainer } from "./ui/lamp";
                         duration: 0.8,
                         ease: "easeInOut",
                 }}
-                className="mt-3 bg-gradient-to-br from-slate-300 to-slate-500 py-2 bg-clip-text text-center text-5xl font-medium tracking-tight text-transparent md:text-6xl"
+                className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-medium tracking-tight text-transparent md:text-6xl"
                 >
                 My Tech <br /> Stack
                 </motion.h1>
