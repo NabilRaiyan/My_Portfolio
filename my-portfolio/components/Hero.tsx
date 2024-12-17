@@ -91,12 +91,9 @@ const Hero = () => {
         <div className="w-full md:w-[700px] h-[300px] md:h-[400px] flex justify-center items-center">
 
         <Spotlight
-        className="-top-[200px] left-0 md:left-[400px] md:-top-20"
-        fill="rgba(180, 180, 180, 0.7)"
-      />
-
-
-
+            className="-top-[200px] left-0 md:left-[400px] md:-top-20"
+            fill="rgba(180, 180, 180, 0.6)"
+        />
             {/* <Image
             alt="image"
             src="/images.jpeg"
@@ -106,8 +103,6 @@ const Hero = () => {
             /> */}
         </div>
     </div>
-
-
     )
 }
 
