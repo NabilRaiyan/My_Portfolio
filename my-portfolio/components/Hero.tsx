@@ -29,6 +29,9 @@ const Hero = () => {
             text: "Stack"
         },
         {
+            text: "Web"
+        },
+        {
             text: "Developer"
         },
     ];
