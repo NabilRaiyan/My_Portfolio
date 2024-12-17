@@ -8,7 +8,7 @@ import {
   } from "@tabler/icons-react";
 
     const Skeleton = () => (
-        <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-white dark:bg-black"></div>    );
+        <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-black dark:bg-black"></div>    );
     const items = [
         {
         title: "The Dawn of Innovation",
@@ -44,7 +44,7 @@ import {
     const TechStack = () => { 
         return (
             <div className="relative mt-[100px] mb-[50px] w-full h-auto items-center justify-center">
-                <h1 className="text-orange-400 font-poppins text-3xl text-center">My Tech Stack</h1>
+                <h1 className="text-orange-400 font-poppins text-3xl text-center mt-10 mb-20">My Tech Stack</h1>
 
 
                 <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
