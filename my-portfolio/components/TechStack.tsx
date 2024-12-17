@@ -1,4 +1,7 @@
+"use client"
+
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid"
+import { motion } from "framer-motion";
 
 import {
     IconClipboardCopy,
@@ -6,6 +9,8 @@ import {
     IconSignature,
     IconTableColumn,
   } from "@tabler/icons-react";
+
+import { LampContainer } from "./ui/lamp";
 
     const Skeleton = () => (
         <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-black dark:bg-black"></div>    );
@@ -44,8 +49,20 @@ import {
     const TechStack = () => { 
         return (
             <div className="relative mt-[100px] mb-[50px] w-full h-auto items-center justify-center">
-                <h1 className="text-orange-400 font-poppins text-3xl text-center mt-10 mb-20">My Tech Stack</h1>
-
+            <LampContainer>
+                <motion.h1
+                    initial={{ opacity: 0.5, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                }}
+                className="mt-3 bg-gradient-to-br from-slate-300 to-slate-500 py-2 bg-clip-text text-center text-5xl font-medium tracking-tight text-transparent md:text-6xl"
+                >
+                My Tech <br /> Stack
+                </motion.h1>
+            </LampContainer>
 
                 <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
                 {items.map((item, i) => (
