@@ -38,7 +38,6 @@ const Hero = () => {
 
     return (
         <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8">
-        {/* Adding spotlight */}
         
         {/* First Div */}
         <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center p-4">
@@ -56,9 +55,6 @@ const Hero = () => {
 
             {/* Social media div */}
             <div className="flex flex-row gap-2 top-[50px] fixed sm:justify-center sm:items-center left-16">
-                
-                
-                
                 <div>
                     <SocialMediaBtn link="https://github.com/NabilRaiyan" icon={<FaGithub />} />
                 </div>
@@ -91,9 +87,10 @@ const Hero = () => {
         <div className="w-full md:w-[700px] h-[300px] md:h-[400px] flex justify-center items-center">
 
         <Spotlight
-            className="-top-[200px] left-0 md:left-[400px] md:-top-20"
+            className="absolute max-w-screen -top-[200px] left-0 md:left-[400px] md:-top-20"
             fill="rgba(180, 180, 180, 0.6)"
         />
+
             {/* <Image
             alt="image"
             src="/images.jpeg"
