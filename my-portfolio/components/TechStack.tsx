@@ -16,6 +16,7 @@ import { LampContainer } from "./ui/lamp";
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2]"></div>);
     const items = [
         {
+        id: 1,
         title: "The Passionate Developer",
         description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
         header: <Skeleton />,
@@ -23,18 +24,21 @@ import { LampContainer } from "./ui/lamp";
         className: "md:col-span-2",
         },
         {
+        id: 2,
         title: "The Digital Revolution",
         description: "Dive into the transformative power of technology.",
         header: <Skeleton />,
         className: "md:col-span-1",
         },
         {
+        id:3,
         title: "The Art of Design",
         description: "Discover the beauty of thoughtful and functional design.",
         header: <Skeleton />,
         className: "md:col-span-1",
         },
         {
+        id:4,
         title: "The Power of Communication",
         description:
             "Understand the impact of effective communication in our lives.",
@@ -65,7 +69,7 @@ import { LampContainer } from "./ui/lamp";
                 {items.map((item, i) => (
                     <BentoGridItem
                     key={i}
-                    id={i}
+                    id={item.id}
                     title={item.title}
                     description={item.description}
                     header={item.header}
@@ -77,7 +81,6 @@ import { LampContainer } from "./ui/lamp";
                 </BentoGrid>
             </div>
         )
-
     }
 
 export default TechStack
