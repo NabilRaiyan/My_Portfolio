@@ -25,9 +25,10 @@ import { LampContainer } from "./ui/lamp";
         },
         {
         id: 2,
-        title: "The Digital Revolution",
-        description: "Dive into the transformative power of technology.",
+        title: "Skills & Tools",
+        // description: "Dive into the transformative power of technology.",
         header: <Skeleton />,
+        image: "/images/b5.svg",
         className: "md:col-span-1",
         },
         {
