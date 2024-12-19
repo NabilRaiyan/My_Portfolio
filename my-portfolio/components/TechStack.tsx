@@ -16,25 +16,22 @@ import { LampContainer } from "./ui/lamp";
         <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2] bg-black dark:bg-black"></div>);
     const items = [
         {
-        title: "The Dawn of Innovation",
-        description: "Explore the birth of groundbreaking ideas and inventions.",
+        title: "The Passionate Developer",
+        description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
         header: <Skeleton />,
         className: "md:col-span-2",
-        icon: <IconClipboardCopy className="h-4 w-4 text-orange-500" />,
         },
         {
         title: "The Digital Revolution",
         description: "Dive into the transformative power of technology.",
         header: <Skeleton />,
         className: "md:col-span-1",
-        icon: <IconFileBroken className="h-4 w-4 text-orange-500" />,
         },
         {
         title: "The Art of Design",
         description: "Discover the beauty of thoughtful and functional design.",
         header: <Skeleton />,
         className: "md:col-span-1",
-        icon: <IconSignature className="h-4 w-4 text-orange-500" />,
         },
         {
         title: "The Power of Communication",
@@ -42,7 +39,6 @@ import { LampContainer } from "./ui/lamp";
             "Understand the impact of effective communication in our lives.",
         header: <Skeleton />,
         className: "md:col-span-2",
-        icon: <IconTableColumn className="h-4 w-4 text-orange-500" />,
         },
     ];
 
@@ -58,9 +54,9 @@ import { LampContainer } from "./ui/lamp";
                         duration: 0.8,
                         ease: "easeInOut",
                 }}
-                className="mt-2 bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-poppins tracking-tight text-transparent md:text-6xl"
+                className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-poppins tracking-tight text-transparent md:text-6xl"
                 >
-                My Tech <br /> Stack
+                    About Me
                 </motion.h1>
             </LampContainer>
 
@@ -72,7 +68,8 @@ import { LampContainer } from "./ui/lamp";
                     description={item.description}
                     header={item.header}
                     className={item.className}
-                    icon={item.icon}
+                    img={item.image}
+                    imgClassName={item.imgClassName}
                     />
                 ))}
                 </BentoGrid>
