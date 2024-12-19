@@ -13,12 +13,13 @@ import {
 import { LampContainer } from "./ui/lamp";
 
     const Skeleton = () => (
-        <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2] bg-black dark:bg-black"></div>);
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2]"></div>);
     const items = [
         {
         title: "The Passionate Developer",
         description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
         header: <Skeleton />,
+        image: "/images/profile.webp", // Corrected path
         className: "md:col-span-2",
         },
         {
@@ -64,12 +65,13 @@ import { LampContainer } from "./ui/lamp";
                 {items.map((item, i) => (
                     <BentoGridItem
                     key={i}
+                    id={i}
                     title={item.title}
                     description={item.description}
                     header={item.header}
                     className={item.className}
-                    img={item.image}
-                    imgClassName={item.imgClassName}
+                    image={item.image}
+                    // imgClassName={item.imgClassName}
                     />
                 ))}
                 </BentoGrid>
