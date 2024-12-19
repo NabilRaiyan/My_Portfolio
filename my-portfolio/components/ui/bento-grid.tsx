@@ -41,7 +41,7 @@ export const BentoGridItem = ({
     switch (id) {
       case 2:
         return (
-        <div className="text-base font-bold text-orange-100"
+        <div className="text-base font-bold text-white "
           style={{
             backgroundImage: (image || id === 2) ? `url(${image})` : undefined,
             backgroundSize: "100%",
@@ -49,11 +49,18 @@ export const BentoGridItem = ({
             backgroundRepeat: "no-repeat",
           }}
         >
-            <ul>🖥️ Frontend: Next Js, React Js</ul>
-            <ul>⚙️ Backend: Node.js, NestJS</ul>
-            <ul>🗄️ Database: PostgreSQL, MongoDB, Supabase, MySQL</ul>
-            <ul>🧪 Testing: Jest, Pactum</ul>
-            <ul>🌐 Hosting: Netlify, Vercel, Render</ul>
+          <ul className="flex gap-8 list-none mt-0 relative bottom-10 ">
+            <li className="flex flex-wrap gap-8 h-28">
+              <ul className="bg-gradient-to-r from-indigo-900 via-indigo-600 to-indigo-400 rounded p-2">Next JS</ul>
+              <ul className="bg-gradient-to-r from-indigo-500 via-indigo-800 to-indigo-600 rounded p-2">Nest JS</ul>
+            </li>
+            <li className="flex flex-wrap gap-8">
+              <ul className="bg-gradient-to-r from-indigo-900 via-indigo-600 to-indigo-400 rounded p-2">PostgreSQL</ul>
+              <ul className="bg-gradient-to-r from-indigo-500 via-indigo-800 to-indigo-600 rounded p-2">Jest</ul>
+              <ul className="bg-gradient-to-r from-indigo-900 via-indigo-600 to-indigo-400 rounded p-2">Vercel</ul>
+              <ul className="bg-gradient-to-r from-indigo-900 via-indigo-600 to-indigo-400 rounded p-2">more...</ul>
+            </li>
+        </ul>
         </div>);
       case 3:
         return <div className="text-lg font-bold text-green-500">Content for ID 3</div>;
@@ -66,7 +73,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:border-white/[0.1] border justify-between flex flex-col",
+        `${id === 2 ? "row-span-1" : ""} rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:border-white/[0.1] border justify-between flex flex-col`,
         className
       )}
 
@@ -81,10 +88,10 @@ export const BentoGridItem = ({
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {renderContentBasedOnId()} {/* Dynamically rendered content based on the id */}
-        <div className="font-sans font-bold text-orange-500 dark:text-neutral-200 mb-2">
+        <div className={`${id === 2 ? 'relative bottom-6': ''} font-poppins font-bold text-orange-500 dark:text-neutral-200 mb-2`}>
           {title}
         </div>
-        <div className="font-sans font-normal text-orange-500 text-xs dark:text-neutral-300">
+        <div className="font-poppins font-normal text-orange-500 text-xs dark:text-neutral-300">
           {description}
         </div>
       </div>
