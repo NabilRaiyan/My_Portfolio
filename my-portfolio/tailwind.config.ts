@@ -21,7 +21,6 @@ export default {
 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        playfair: ["Playfair", "sans-serif"],
         lora: ["Lora", "sans-serif"]
       },
 

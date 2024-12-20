@@ -1,6 +1,5 @@
 import React from "react";
 import { TypewriterEffect } from "./ui/typewriter-effect";
-import Image from "next/image";
 import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
@@ -79,7 +78,7 @@ const Hero = () => {
             </div>
 
             {/* Custom Button */}
-            <CustomButton />
+            <CustomButton link="https://github.com/NabilRaiyan" text="See My Work" />
 
         </div>
 

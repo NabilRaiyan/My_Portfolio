@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import CustomButton from "./CustomButton";
 
 export const BentoGrid = ({
   className,
@@ -63,7 +64,9 @@ export const BentoGridItem = ({
         </ul>
         </div>);
       case 3:
-        return <div className="text-lg font-bold text-green-500">Content for ID 3</div>;
+        return <div className="text-lg font-bold">
+            <CustomButton text='Copy Email'/>
+        </div>;
       case 4:
         return <div className="text-lg font-bold text-green-500">Content for ID 4</div>;
 
@@ -88,7 +91,7 @@ export const BentoGridItem = ({
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {renderContentBasedOnId()} {/* Dynamically rendered content based on the id */}
-        <div className={`${id === 2 ? 'relative bottom-6': ''} font-poppins text-lg font-bold text-white dark:text-neutral-200 mb-2`}>
+        <div className={`${id === 2 ? 'relative bottom-6': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
           {title}
         </div>
         <div className="font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300">

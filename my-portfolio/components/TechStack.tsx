@@ -18,7 +18,7 @@ import { LampContainer } from "./ui/lamp";
         {
         id: 1,
         title: "A Passionate Developer",
-        description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, NextJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
+        description: "Hi, I’m Raiyan Al Sultan — a passionate full-stack developer skilled in NestJS, NextJS, React, PostgreSQL, and MongoDB. I create seamless digital experiences and share knowledge via KodeForce and Medium. Let’s build something amazing!",
         header: <Skeleton />,
         image: "/images/b1.svg", // 
         className: "md:col-span-2",
@@ -33,9 +33,10 @@ import { LampContainer } from "./ui/lamp";
         },
         {
         id:3,
-        title: "The Art of Design",
-        description: "Discover the beauty of thoughtful and functional design.",
+        title: "Let's Build Something Together",
+        // description: "Discover the beauty of thoughtful and functional design.",
         header: <Skeleton />,
+        image: "/images/exp4.svg",
         className: "md:col-span-1",
         },
         {
