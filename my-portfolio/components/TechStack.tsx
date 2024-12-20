@@ -20,7 +20,7 @@ import { LampContainer } from "./ui/lamp";
         title: "The Passionate Developer",
         description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
         header: <Skeleton />,
-        image: "/images/profile.webp", // Corrected path
+        image: "/images/b1.svg", // Corrected path
         className: "md:col-span-2",
         },
         {

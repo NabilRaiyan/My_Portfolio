@@ -79,7 +79,7 @@ export const BentoGridItem = ({
 
       style={{
         backgroundImage: (image || id === 1) ? `url(${image})` : undefined,
-        backgroundSize: "80%",
+        backgroundSize: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
