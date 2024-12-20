@@ -1,8 +1,7 @@
-// create bento grid for email section
+// TODO: create bento grid for email section
 
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { useState } from "react";
 import animationData from '../../data/confetti.json'
