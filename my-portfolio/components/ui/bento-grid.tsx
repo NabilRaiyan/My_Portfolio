@@ -74,7 +74,6 @@ export const BentoGridItem = ({
         </div>);
       case 3:
         return <div className="text-lg font-bold">
-            {/* <CustomButton text='Copy Email'/> */}
             <div className={`absolute -bottom-5 right-0`}>
                     <Lottie options={{
                       loop: copied,
