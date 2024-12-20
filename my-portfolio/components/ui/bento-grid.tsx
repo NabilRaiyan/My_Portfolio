@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
+import { useState } from "react";
+import animationData from '../../data/confetti.json'
+import Lottie from "react-lottie";
 
 export const BentoGrid = ({
   className,
@@ -9,6 +12,8 @@ export const BentoGrid = ({
   className?: string;
   children?: React.ReactNode;
 }) => {
+
+
   return (
     <div
       className={cn(
@@ -38,7 +43,11 @@ export const BentoGridItem = ({
   id: number;
   imgClassName?: string;
 }) => {
+
+  const [copied, setCopied] = useState(false);
+
   const renderContentBasedOnId = () => {
+    
     switch (id) {
       case 2:
         return (
@@ -65,7 +74,18 @@ export const BentoGridItem = ({
         </div>);
       case 3:
         return <div className="text-lg font-bold">
-            <CustomButton text='Copy Email'/>
+            {/* <CustomButton text='Copy Email'/> */}
+            <div className={`absolute -bottom-5 right-0`}>
+                    <Lottie options={{
+                      loop: copied,
+                      autoplay: copied,
+                      animationData: animationData,
+                      rendererSettings: {
+                        preserveAspectRatio: 'xMidYMid slice'
+                      }
+                    }} />
+            </div>
+            <CustomButton text="Copy Email"/>
         </div>;
       case 4:
         return <div className="text-lg font-bold text-green-500">Content for ID 4</div>;
