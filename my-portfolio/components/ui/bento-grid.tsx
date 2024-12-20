@@ -88,10 +88,10 @@ export const BentoGridItem = ({
       {header}
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         {renderContentBasedOnId()} {/* Dynamically rendered content based on the id */}
-        <div className={`${id === 2 ? 'relative bottom-6': ''} font-poppins font-bold text-orange-500 dark:text-neutral-200 mb-2`}>
+        <div className={`${id === 2 ? 'relative bottom-6': ''} font-poppins text-lg font-bold text-white dark:text-neutral-200 mb-2`}>
           {title}
         </div>
-        <div className="font-poppins font-normal text-orange-500 text-xs dark:text-neutral-300">
+        <div className="font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300">
           {description}
         </div>
       </div>

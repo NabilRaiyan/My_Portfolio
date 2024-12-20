@@ -17,10 +17,10 @@ import { LampContainer } from "./ui/lamp";
     const items = [
         {
         id: 1,
-        title: "The Passionate Developer",
-        description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
+        title: "A Passionate Developer",
+        description: "Hi, I’m Raiyan Al Sultan. I’m a passionate full-stack developer with experience in NestJS, NextJS, React, PostgreSQL, and MongoDB. I love creating seamless digital experiences and sharing knowledge through KodeForce and Medium. Let’s build something amazing together!",
         header: <Skeleton />,
-        image: "/images/b1.svg", // Corrected path
+        image: "/images/b1.svg", // 
         className: "md:col-span-2",
         },
         {
