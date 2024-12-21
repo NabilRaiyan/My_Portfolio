@@ -3,6 +3,7 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
+import Image from "next/image";
 import { FaGithub, FaFacebook, FaLinkedin, FaMedium } from "react-icons/fa";
 const Hero = () => {
 
@@ -92,7 +93,7 @@ const Hero = () => {
 
             {/* <Image
             alt="image"
-            src="/images.jpeg"
+            src="/images/exp4.svg"
             width={300}
             height={300}
             className="object-cover sm:w-[400px] sm:h-[400px] md:w-[550px] md:h-[550px]"
