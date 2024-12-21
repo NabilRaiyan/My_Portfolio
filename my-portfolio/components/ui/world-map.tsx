@@ -12,9 +12,10 @@ interface MapProps {
     end: { lat: number; lng: number; label?: string };
   }>;
   lineColor?: string;
+  customClass: string;
 }
 
-export function WorldMap({
+export function WorldMap({ customClass,
   dots = [],
   lineColor = "#0ea5e9",
 }: MapProps) {
@@ -23,14 +24,15 @@ export function WorldMap({
 
   const { theme } = useTheme();
 
-  const isDarkTheme = theme === "dark" || theme === undefined;
+  
+const isDarkTheme = theme === "dark" || theme === undefined;
 
-  const svgMap = map.getSVG({
-    radius: 0.22,
-    color: isDarkTheme ? "#FFFFFF40" : "#00000040",
-    shape: "circle",
-    backgroundColor: isDarkTheme ? "black" : "white",
-  });
+const svgMap = map.getSVG({
+  radius: 0.22,
+  color: isDarkTheme ? "#FFFFFF40" : "#00000040",
+  shape: "circle",
+  backgroundColor: isDarkTheme ? "black" : "white",
+});
 
   const projectPoint = (lat: number, lng: number) => {
     const x = (lng + 180) * (800 / 360);
@@ -48,7 +50,7 @@ export function WorldMap({
   };
 
   return (
-    <div className="w-full aspect-[2/1] dark:bg-black bg-black rounded-lg  relative border font-sans">
+    <div className={`${customClass} w-full aspect-[2/1] dark:bg-black bg-black rounded-lg relative font-sans`}>
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
@@ -170,3 +172,9 @@ export function WorldMap({
     </div>
   );
 }
+
+
+
+
+
+

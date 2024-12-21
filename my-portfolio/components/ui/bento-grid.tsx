@@ -1,4 +1,6 @@
 
+"use client";
+
 import { cn } from "@/lib/utils";
 import CustomButton from "./CustomButton";
 import { useState } from "react";
@@ -98,39 +100,42 @@ export const BentoGridItem = ({
             />
         </div>;
       case 4:
-        return <div className="">
-        <div className="">
-          {/* Map component */}
-          <WorldMap
-            dots={[
-              {
-                start: { lat: 64.2008, lng: -149.4937 },
-                end: { lat: 34.0522, lng: -118.2437 },
-              },
-              {
-                start: { lat: 64.2008, lng: -149.4937 },
-                end: { lat: -15.7975, lng: -47.8919 },
-              },
-              {
-                start: { lat: -15.7975, lng: -47.8919 },
-                end: { lat: 38.7223, lng: -9.1393 },
-              },
-              {
-                start: { lat: 51.5074, lng: -0.1278 },
-                end: { lat: 28.6139, lng: 77.209 },
-              },
-              {
-                start: { lat: 28.6139, lng: 77.209 },
-                end: { lat: 43.1332, lng: 131.9113 },
-              },
-              {
-                start: { lat: 28.6139, lng: 77.209 },
-                end: { lat: -1.2921, lng: 36.8219 },
-              },
-            ]}
-          />
-        </div>
-      </div>
+        return (
+          // <div className="mb-0 flex justify-center items-center">
+            <div className="w-full relative bottom-[178px]">
+              {/* Map component */}
+              <WorldMap customClass='mt-[100px]'
+                dots={[
+                  {
+                    start: { lat: 64.2008, lng: -149.4937 },
+                    end: { lat: 34.0522, lng: -118.2437 },
+                  },
+                  {
+                    start: { lat: 64.2008, lng: -149.4937 },
+                    end: { lat: -15.7975, lng: -47.8919 },
+                  },
+                  {
+                    start: { lat: -15.7975, lng: -47.8919 },
+                    end: { lat: 38.7223, lng: -9.1393 },
+                  },
+                  {
+                    start: { lat: 51.5074, lng: -0.1278 },
+                    end: { lat: 28.6139, lng: 77.209 },
+                  },
+                  {
+                    start: { lat: 28.6139, lng: 77.209 },
+                    end: { lat: 43.1332, lng: 131.9113 },
+                  },
+                  {
+                    start: { lat: 28.6139, lng: 77.209 },
+                    end: { lat: -1.2921, lng: 36.8219 },
+                  },
+                ]}
+              />
+            </div>
+          // </div>
+        );
+        
       
       
 
@@ -140,7 +145,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        `${id === 2 ? "row-span-1" : ""} rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:border-white/[0.1] border justify-between flex flex-col`,
+        `${id === 2 ? "row-span-1" : ""} rounded-xl p-4 group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none dark:border-white/[0.1] border justify-between flex flex-col`,
         className
       )}
 
@@ -153,12 +158,12 @@ export const BentoGridItem = ({
       
     >
       {header}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
+      <div className={`${id === 4 ? '' : 'group-hover/bento:translate-x-2'} transition duration-200`}>
         {renderContentBasedOnId()} {/* Dynamically rendered content based on the id */}
-        <div className={`${id === 2 ? 'relative bottom-6': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
+        <div className={`${id === 2 ? 'relative bottom-6': ''} ${id === 4 ? 'absolute bottom-24 mb-5': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
           {title}
         </div>
-        <div className="font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300">
+        <div className={`${id === 4 ? 'absolute bottom-24': ''} font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300`}>
           {description}
         </div>
       </div>
