@@ -23,11 +23,13 @@ export function WorldMap({
 
   const { theme } = useTheme();
 
+  const isDarkTheme = theme === "dark" || theme === undefined;
+
   const svgMap = map.getSVG({
     radius: 0.22,
-    color: theme === "dark" ? "#FFFFFF40" : "#00000040",
+    color: isDarkTheme ? "#FFFFFF40" : "#00000040",
     shape: "circle",
-    backgroundColor: theme === "dark" ? "black" : "white",
+    backgroundColor: isDarkTheme ? "black" : "white",
   });
 
   const projectPoint = (lat: number, lng: number) => {
@@ -46,7 +48,7 @@ export function WorldMap({
   };
 
   return (
-    <div className="w-full aspect-[2/1] dark:bg-black bg-white rounded-lg  relative font-sans">
+    <div className="w-full aspect-[2/1] dark:bg-black bg-black rounded-lg  relative border font-sans">
       <Image
         src={`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`}
         className="h-full w-full [mask-image:linear-gradient(to_bottom,transparent,white_10%,white_90%,transparent)] pointer-events-none select-none"
