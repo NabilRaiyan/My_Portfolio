@@ -6,6 +6,7 @@ import CustomButton from "./CustomButton";
 import { useState } from "react";
 import animationData from '../../data/confetti.json'
 import Lottie from "react-lottie";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -47,6 +48,10 @@ export const BentoGridItem = ({
 }) => {
 
   const [copied, setCopied] = useState(false);
+  const handleCopy = () =>{
+    navigator.clipboard.writeText('raiyanalsultan@gmail.com')
+    setCopied(true)
+  }
 
   const renderContentBasedOnId = () => {
     
@@ -86,7 +91,12 @@ export const BentoGridItem = ({
                       }
                     }} />
             </div>
-            <CustomButton text="Copy Email"/>
+            <CustomButton text={copied ? 'Email Copied' : "Copy My Email"}
+                          icon={<IoCopyOutline />}
+                          handleClick={handleCopy}
+                          
+            
+            />
         </div>;
       case 4:
         return <div className="text-lg font-bold text-green-500">Content for ID 4</div>;
