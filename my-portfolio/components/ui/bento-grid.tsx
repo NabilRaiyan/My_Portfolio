@@ -1,5 +1,3 @@
-// TODO: create bento grid for email section
-
 
 import { cn } from "@/lib/utils";
 import CustomButton from "./CustomButton";
@@ -99,7 +97,9 @@ export const BentoGridItem = ({
             />
         </div>;
       case 4:
-        return <div className="text-lg font-bold text-green-500">Content for ID 4</div>;
+        return <div className="text-lg font-bold">
+
+        </div>;
 
     }
   };

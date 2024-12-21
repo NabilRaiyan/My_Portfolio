@@ -41,9 +41,9 @@ import { LampContainer } from "./ui/lamp";
         },
         {
         id:4,
-        title: "The Power of Communication",
+        title: "Remote Connectivity",
         description:
-            "Understand the impact of effective communication in our lives.",
+            "Seamless Collaboration, Anytime, Anywhere.",
         header: <Skeleton />,
         className: "md:col-span-2",
         },
