@@ -3,12 +3,6 @@
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid"
 import { motion } from "framer-motion";
 
-import {
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-  } from "@tabler/icons-react";
 
 import { LampContainer } from "./ui/lamp";
 

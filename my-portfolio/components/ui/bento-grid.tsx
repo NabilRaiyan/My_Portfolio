@@ -98,8 +98,8 @@ export const BentoGridItem = ({
             />
         </div>;
       case 4:
-        return <div className="grid grid-cols-1 md:grid-cols-1 gap-4 p-4">
-        <div className="relative w-full h-full col-span-1 md:col-span-1">
+        return <div className="">
+        <div className="">
           {/* Map component */}
           <WorldMap
             dots={[
