@@ -164,10 +164,10 @@ export const BentoGridItem = ({
       {header}
       <div className={`${id === 4 ? '' : 'group-hover/bento:translate-x-2'} transition duration-200`}>
         {renderContentBasedOnId()} {/* Dynamically rendered content based on the id */}
-        <div className={`${id === 2 ? 'relative bottom-6': ''} ${id === 4 ? 'absolute bottom-24 mb-8': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
+        <div className={`${id === 2 ? 'relative bottom-6': ''} ${id === 4 ? 'absolute bottom-[47px] mb-2': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
           {title}
         </div>
-        <div className={`${id === 4 ? 'absolute bottom-24': ''} font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300`}>
+        <div className={`${id === 4 ? 'absolute bottom-[36px]': ''} font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300`}>
           {description}
         </div>
       </div>
