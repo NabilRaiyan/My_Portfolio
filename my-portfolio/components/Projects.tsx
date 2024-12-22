@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { PinContainer } from "./ui/3d-pin";
 
+// project interface
 interface Project {
   id: number;
   created_at: string;
