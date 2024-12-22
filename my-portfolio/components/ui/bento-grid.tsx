@@ -82,7 +82,7 @@ export const BentoGridItem = ({
         </div>);
       case 3:
         return <div className="text-lg font-bold">
-            <div className={`absolute -bottom-5 right-0`}>
+            <div className={`absolute -bottom-5`}>
                     <Lottie options={{
                       loop: copied,
                       autoplay: copied,
@@ -98,7 +98,7 @@ export const BentoGridItem = ({
                           
             
             />
-        </div>;
+          </div>;
       case 4:
         return (
           // <div className="mb-0 flex justify-center items-center">
@@ -130,6 +130,10 @@ export const BentoGridItem = ({
                     start: { lat: 28.6139, lng: 77.209 },
                     end: { lat: -1.2921, lng: 36.8219 },
                   },
+                  {
+                    start: { lat: 40.6139, lng: 120.209 },
+                    end: { lat: -4.2921, lng: 76.8219 },
+                  },
                 ]}
               />
             </div>
@@ -160,7 +164,7 @@ export const BentoGridItem = ({
       {header}
       <div className={`${id === 4 ? '' : 'group-hover/bento:translate-x-2'} transition duration-200`}>
         {renderContentBasedOnId()} {/* Dynamically rendered content based on the id */}
-        <div className={`${id === 2 ? 'relative bottom-6': ''} ${id === 4 ? 'absolute bottom-24 mb-5': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
+        <div className={`${id === 2 ? 'relative bottom-6': ''} ${id === 4 ? 'absolute bottom-24 mb-8': ''} font-poppins text-lg font-bold text-cyan-300 dark:text-neutral-200 mb-2`}>
           {title}
         </div>
         <div className={`${id === 4 ? 'absolute bottom-24': ''} font-poppins font-normal text-slate-100 text-[15px] dark:text-neutral-300`}>
