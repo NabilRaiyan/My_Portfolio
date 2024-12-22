@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import Project from "@/components/Projects";
 import TechStack from "@/components/TechStack";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import {FaHome, FaPhone} from 'react-icons/fa'
@@ -14,6 +15,7 @@ export default function Home() {
       ]} />
       <Hero />
       <TechStack />
+      <Project />
     </main>
   );
 }

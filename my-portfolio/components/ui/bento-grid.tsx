@@ -82,7 +82,7 @@ export const BentoGridItem = ({
         </div>);
       case 3:
         return <div className="text-lg font-bold">
-            <div className={`absolute -bottom-5`}>
+            <div className={`absolute`}>
                     <Lottie options={{
                       loop: copied,
                       autoplay: copied,
