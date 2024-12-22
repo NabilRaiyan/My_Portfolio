@@ -1,24 +1,23 @@
 "use client";
 
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { PinContainer } from "./ui/3d-pin";
 
 interface Project {
-    id: number;
-    created_at: string;
-    title: string;
-    description: string;
-    live_url: string;
-    technologies: Record<string, string>; // Key-value pair for technologies
-    image_url: string | null;
-  }
+  id: number;
+  created_at: string;
+  title: string;
+  description: string;
+  live_url: string;
+  technologies: Record<string, string>; // Key-value pair for technologies
+  image_url: string | null;
+}
 
-  
 const Projects = () => {
-
-   const [projects, setProjects] = useState<Project[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState<boolean>(true); // State to track loading
+  const [error, setError] = useState<string | null>(null); // State to track error
 
   // Fetch all projects from the API
   const all_projects = async () => {
@@ -32,14 +31,25 @@ const Projects = () => {
         }
       );
       setProjects(response.data); // Store the response data in state
+      setLoading(false); // Set loading to false once data is fetched
     } catch (error) {
       console.error("Error fetching projects:", error);
+      setError("Failed to load projects."); // Set error state if the request fails
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     all_projects();
   }, []);
+
+  if (loading) {
+    return <div className="text-white">Loading...</div>; // Show loading state while fetching data
+  }
+
+    if (error) {
+    return <div>{error}</div>; // Show error message if fetching fails
+  }
 
   return (
     <div className="justify-center items-center sm:justify-center sm:items-center">
@@ -48,11 +58,11 @@ const Projects = () => {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <PinContainer
-            key={index} // Ensure a unique key for each item
-            title={project.title} // Replace with the actual title property from your data
-            href={project.live_url} // Replace with the actual href property from your data
+            key={project.id} // Use project.id for the key to ensure it's unique
+            title={project.title} // Project title
+            href={project.live_url} // Pass live URL to PinContainer
           >
             <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
               {/* Project Title */}
