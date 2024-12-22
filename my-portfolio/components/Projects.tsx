@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 const Project = () => {
 
+    // getting all the projects
     const all_projects = async () => {
         try {
           const response = await axios.get("https://ciwzssxdlrxawjaswmff.supabase.co/rest/v1/Project_Table?select=*", {
