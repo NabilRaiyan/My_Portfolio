@@ -42,10 +42,12 @@ const Projects = () => {
     }
   };
 
+  // call api from supabase
   useEffect(() => {
     all_projects();
   }, []);
 
+  // adding loading animation
   if (loading) {
     return <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
     <Lottie
@@ -57,8 +59,8 @@ const Projects = () => {
           preserveAspectRatio: 'xMidYMid slice',
         },
       }}
-      height={200} // Adjust size as needed
-      width={200} // Adjust size as needed
+      height={200}
+      width={200}
     />
   </div>
   }
@@ -88,14 +90,14 @@ const Projects = () => {
 
               {/* Project Description */}
               <div className="text-base !m-0 !p-0 font-normal">
-                <span className="text-slate-500">{project.description}</span>
+                <span className="text-slate-400">{project.description}</span>
               </div>
 
               {/* Technologies Used */}
-              <ul className="mt-2 text-slate-400 text-sm list-disc list-inside">
+              <ul className="mt-4 text-cyan-300 text-sm list-disc list-inside">
                 {project.technologies &&
                   Object.values(project.technologies).map((tech, idx) => (
-                    <li key={idx}>{tech}</li>
+                    <li className="" key={idx}>{tech}</li>
                   ))}
               </ul>
 
