@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { PinContainer } from "./ui/3d-pin";
+import Lottie from "react-lottie";
+import animationData from '@/data/loading.json'
 
 // project interface
 interface Project {
@@ -45,7 +47,20 @@ const Projects = () => {
   }, []);
 
   if (loading) {
-    return <div className="text-white">Loading...</div>; // Show loading state while fetching data
+    return <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
+    <Lottie
+      options={{
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice',
+        },
+      }}
+      height={200} // Adjust size as needed
+      width={200} // Adjust size as needed
+    />
+  </div>
   }
 
     if (error) {

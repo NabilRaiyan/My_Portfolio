@@ -4,7 +4,7 @@ import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
 import Image from "next/image";
-import { FaGithub, FaFacebook, FaLinkedin, FaMedium } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLinkedin, FaMedium, FaArrowCircleRight } from "react-icons/fa";
 const Hero = () => {
 
 
@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
 
             {/* Custom Button */}
-            <CustomButton link="https://github.com/NabilRaiyan" text="See My Work" />
+            <CustomButton link="https://github.com/NabilRaiyan" text="See My Work"/>
 
         </div>
 
