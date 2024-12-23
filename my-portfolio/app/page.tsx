@@ -1,3 +1,4 @@
+import Approach from "@/components/Approach";
 import Hero from "@/components/Hero";
 import Project from "@/components/Projects";
 import TechStack from "@/components/TechStack";
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <TechStack />
       <Project />
+      <Approach />
     </main>
   );
 }
