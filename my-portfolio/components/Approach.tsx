@@ -8,9 +8,9 @@ const Approach = ()=> {
         My <span className="text-purple">Approach</span>
       </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 mt-[160px] mb-[200px]">
-            <div className="bg-orange-300 rounded-sm p-5 w-full h-full">div1</div>
-            <div className="bg-orange-300 rounded-sm p-5 w-full h-full">div2</div>
-            <div className="bg-orange-300 rounded-sm p-5 w-full h-full">div3</div>
+            <div className="bg-orange-300 border rounded-sm p-5 w-full h-full">div1</div>
+            <div className="bg-orange-300 border rounded-sm p-5 w-full h-full">div2</div>
+            <div className="bg-orange-300 border rounded-sm p-5 w-full h-full">div3</div>
         </div>
 
     </section>
