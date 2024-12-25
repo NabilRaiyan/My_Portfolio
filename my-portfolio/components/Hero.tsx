@@ -4,6 +4,8 @@ import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
 import { FaGithub, FaFacebook, FaLinkedin, FaMedium } from "react-icons/fa";
+
+// Hero function
 const Hero = () => {
 
 
