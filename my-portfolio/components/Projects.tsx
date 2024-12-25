@@ -17,6 +17,7 @@ interface Project {
   image_url: string | null;
 }
 
+// Projects function
 const Projects = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState<boolean>(true); // State to track loading
