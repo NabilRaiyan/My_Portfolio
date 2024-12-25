@@ -2,7 +2,7 @@
 import React from "react";
 
 
-// approach function
+// Approach function
 const Approach = ()=> {
   return (
     <section className="justify-center items-center sm:justify-center sm:items-center">
