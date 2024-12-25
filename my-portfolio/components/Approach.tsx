@@ -2,8 +2,9 @@
 import React from "react";
 
 
+
 // Approach function
-const Approach = ()=> {
+const Approach = () => {
   return (
     <section className="justify-center items-center sm:justify-center sm:items-center">
       <h1 className="text-4xl mb-10 sm:text-5xl md:text-[3.2rem] lg:text-4xl xl:text-[3rem] font-poppins font-extralight text-cyan-300 text-center mt-[100px]">
