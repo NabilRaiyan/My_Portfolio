@@ -24,7 +24,7 @@ const ApproachCard = ({title, description, imageLink }:CardPropsType) => {
         <motion.div className="text-center text-lg text-white font-semibold mb-2">
             {title}
         </motion.div>
-        <motion.div className="text-justify text-slate-200 text-sm">
+        <motion.div className="text-justify text-slate-300 text-sm">
             {description}
         </motion.div>
     </motion.div>
