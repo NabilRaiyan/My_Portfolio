@@ -9,6 +9,7 @@ interface CardPropsType {
     imageLink: string;
 }
 
+// Approach Card
 const ApproachCard = ({title, description, imageLink }:CardPropsType) => {
   return (
     <motion.div 

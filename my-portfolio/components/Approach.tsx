@@ -25,7 +25,6 @@ const Approach = () => {
               ))
           }
         </div>
-
     </section>
   );
 }
