@@ -106,4 +106,5 @@ const Hero = () => {
     )
 }
 
+// export hero section
 export default Hero

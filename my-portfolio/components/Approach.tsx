@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-
+import ApproachCard from "./ui/Card";
 
 
 // Approach function
@@ -12,9 +12,16 @@ const Approach = () => {
         My <span className="text-purple">Approach</span>
       </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 mt-[160px] mb-[200px]">
-            <div className="bg-orange-300 border rounded-sm p-5 w-full h-full">div1</div>
-            <div className="bg-orange-300 border rounded-sm p-5 w-full h-full">div2</div>
-            <div className="bg-orange-300 border rounded-sm p-5 w-full h-full">div3</div>
+            <ApproachCard title="Planning & Strategy" description="We'll collaborate to map out your website's goals, target audience, 
+          and key functionalities. We'll discuss things like site structure, 
+          navigation, and content requirements."/>
+            <ApproachCard title="Development & Progress Update" description="Once we agree on the plan, I cue my lofi playlist and dive into
+          coding. From initial sketches to polished code, I keep you updated
+          every step of the way."/>
+            <ApproachCard title="Development & Launch" description="This is where the magic happens! Based on the approved design, 
+          I'll translate everything into functional code, building your website
+          from the ground up."/>
+
         </div>
 
     </section>
