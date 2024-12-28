@@ -72,8 +72,8 @@ const Projects = () => {
 
   return (
     <div className="justify-center items-center sm:justify-center sm:items-center">
-      <h1 className="text-4xl mb-10 sm:text-5xl md:text-[3.2rem] lg:text-4xl xl:text-[3rem] font-poppins font-extralight text-cyan-300 text-center mt-[100px]">
-        Some Of My Projects
+      <h1 className="text-4xl mb-10 sm:text-5xl md:text-[3.2rem] lg:text-4xl xl:text-[3rem] font-poppins font-extralight text-white text-center mt-[100px]">
+        Some Of My <span className="text-cyan-300">Projects</span>
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 mb-[100px]">
