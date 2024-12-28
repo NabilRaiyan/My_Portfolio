@@ -55,7 +55,7 @@ import { LampContainer } from "./ui/lamp";
                         duration: 0.8,
                         ease: "easeInOut",
                 }}
-                className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-poppins tracking-tight text-transparent md:text-6xl"
+                className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-5xl font-poppins tracking-tight font-extralight text-transparent md:text-6xl"
                 >
                     About Me
                 </motion.h1>
