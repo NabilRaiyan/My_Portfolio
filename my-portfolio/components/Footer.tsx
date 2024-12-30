@@ -14,9 +14,14 @@ const Footer = () => {
             </h1>
 
            
-            <div className="text-white mt-[100px]">name</div>
+            <div className="text-white mt-[100px] flex flex-row gap-x-10">
+                <div>name</div>
+                <div>name</div>
+                <div>name</div>
 
-            <div className="text-white mb-10 sm:text-xl md:text-[1.2rem] lg:text-[1 rme] xl:text-[1rem] font-poppins font-extraligh text-center mt-[100px]">Copyright at Raiyan Al Sultan {currentYear}</div>
+            </div>
+
+            <div className="text-slate-300 mb-10 sm:text-xl md:text-[1.2rem] lg:text-[1 rme] xl:text-[1rem] font-poppins font-extraligh text-center mt-[100px]">Copyright at Raiyan Al Sultan {currentYear}</div>
         </footer>
     )
 }
