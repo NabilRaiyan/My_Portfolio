@@ -18,27 +18,34 @@ const Footer = () => {
 
            
             <div className="text-white mt-[100px] flex flex-row gap-10">
-                <div className="w-[200px] text-clip text-wrap">
+                <div className="w-[250px] text-clip text-wrap">
                     <p className='text-xl text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let&apos;s discuss how I can help you achieve yours goals </p>
-                    <a href='mailto:raiyanalsultan@gmail.com'>
-                        <CustomButton text="Let's get in touch" icon={<FaLocationArrow />} />
-                    </a>
+                    <div className="flex justify-center items-center">
+                        <a href="mailto:raiyanalsultan@gmail.com">
+                            <CustomButton text="Let's get in touch" icon={<FaLocationArrow />} />
+                        </a>
+                    </div>
+
                 </div>
 
 
-                <div className="w-[200px] text-clip text-wrap">
+                <div className="w-[250px] text-clip text-wrap">
                     <p className='text-xl text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let&apos;s discuss how I can help you achieve yours goals </p>
-                    <a href='mailto:raiyanalsultan@gmail.com'>
-                        <CustomButton text="Let's get in touch" icon={<FaLocationArrow />} />
-                    </a>
+                    <div className="flex justify-center items-center">
+                        <a href="mailto:raiyanalsultan@gmail.com">
+                            <CustomButton text="Let's get in touch" icon={<FaLocationArrow />} />
+                        </a>
+                    </div>
                 </div>
 
 
-                <div className="w-[200px] text-clip text-wrap">
+                <div className="w-[250px] text-clip text-wrap justify-center items-center">
                     <p className='text-xl text-white-200 md:mt-10 my-5 text-center'>Reach out to me today and let&apos;s discuss how I can help you achieve yours goals </p>
-                    <a href='mailto:raiyanalsultan@gmail.com'>
-                        <CustomButton text="Let's get in touch" icon={<FaLocationArrow />} />
-                    </a>
+                    <div className="flex justify-center items-center">
+                        <a href="mailto:raiyanalsultan@gmail.com">
+                            <CustomButton text="Let's get in touch" icon={<FaLocationArrow />} />
+                        </a>
+                    </div>
                 </div>
 
             </div>
