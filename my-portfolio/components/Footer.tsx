@@ -3,6 +3,8 @@
 import CustomButton from "./ui/CustomButton"
 import { FaLocationArrow } from 'react-icons/fa'
 
+
+// get current year
 const currentYear = new Date().getFullYear()
 
 // Footer section
