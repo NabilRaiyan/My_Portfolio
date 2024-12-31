@@ -29,5 +29,6 @@ const Approach = () => {
   );
 }
 
+// Approach section
 export default Approach
 
