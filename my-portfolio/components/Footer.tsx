@@ -18,6 +18,7 @@ const Footer = () => {
                 <span className="block text-cyan-300 mt-5">your outside digital presence</span>
             </h1>
 
+            {/* creating footer sub div */}
             <div className="text-white mt-[100px] flex flex-col sm:flex-row justify-center sm:justify-between gap-10">
                 <div className="w-full sm:w-[250px] text-clip text-wrap">
                     <p className="text-xl text-white-200 my-5 text-center">Reach out to me today and let&apos;s discuss how I can help you achieve your goals</p>
