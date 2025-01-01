@@ -1,4 +1,6 @@
 
+
+"use client"
 interface SocialMediaBtnProps {
     link: string,
     icon: React.ReactNode
