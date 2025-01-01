@@ -5,7 +5,7 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 import { Spotlight } from "./ui/Spotlight";
 import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
-import { FaGithub, FaFacebook, FaLinkedin, FaMedium } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLinkedin, FaMedium, FaDownload } from "react-icons/fa";
 
 // Hero function
 const Hero = () => {
@@ -56,8 +56,21 @@ const Hero = () => {
                 className="fixed left-[20.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong3"
             />
 
+            {/* Download button for cv */}
+            <div className="absolute top-1 right-10 m-4 p-2 rounded-sm">
+            <a 
+                href="https://ciwzssxdlrxawjaswmff.supabase.co/storage/v1/object/public/files/public/CVPR%20paper.pdf" 
+                download="cv" 
+                className="text-cyan-300 font-poppins text-xl font-thin flex items-center space-x-2"
+            >
+                <span>Download CV</span>
+                <span><FaDownload /></span>
+            </a>
+            </div>
+
             {/* Social media div */}
             <div className="flex flex-row gap-2 top-[50px] fixed sm:justify-center sm:items-center left-16">
+
                 <div>
                     <SocialMediaBtn link="https://github.com/NabilRaiyan" icon={<FaGithub />} />
                 </div>
@@ -87,21 +100,17 @@ const Hero = () => {
         </div>
 
         {/* Second Div */}
-        <div className="w-full md:w-[700px] h-[300px] md:h-[400px] flex justify-center items-center">
+        <div className="w-full md:w-[700px] h-[300px] md:h-[400px] flex justify-center items-center relative">
 
-        <Spotlight
-            className="absolute max-w-screen -top-[200px] left-0 md:left-[400px] md:-top-20"
-            fill="rgba(180, 180, 180, 0.6)"
-        />
 
-            {/* <Image
-            alt="image"
-            src="/images/exp4.svg"
-            width={300}
-            height={300}
-            className="object-cover sm:w-[400px] sm:h-[400px] md:w-[550px] md:h-[550px]"
-            /> */}
+            <Spotlight
+                className="absolute max-w-screen -top-[200px] left-0 md:left-[400px] md:-top-20"
+                fill="rgba(180, 180, 180, 0.6)"
+            />
+
+
         </div>
+
     </div>
     )
 }

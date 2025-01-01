@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
 
             <div className="text-slate-300 mb-10 sm:text-xl md:text-[1.2rem] lg:text-[1rem] xl:text-[1rem] font-poppins font-extralight text-center mt-[100px]">
-                Copyright at Raiyan Al Sultan {currentYear}
+                Copyright © {currentYear} by Raiyan Al Sultan
             </div>
         </footer>
     )
