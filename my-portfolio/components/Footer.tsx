@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className="mt-10 sm:mt-8 md:mt-12 lg:mt-16 px-4 sm:px-6 md:px-8 lg:px-10">
             <h1 className="text-4xl mb-10 sm:text-5xl md:text-[3.2rem] leading-6 lg:text-4xl xl:text-[3rem] font-poppins font-extralight text-white text-center mt-[100px]">
                 Ready to take
-                <span className="block text-cyan-300 mt-5">your outside digital presence</span>
+                <span className="block text-cyan-300 mt-5 sm:leading-7 md:leading-7">your outside digital presence</span>
             </h1>
 
             {/* creating footer sub div */}
