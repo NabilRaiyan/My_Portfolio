@@ -67,7 +67,7 @@ export const BentoGridItem = ({
             backgroundRepeat: "no-repeat",
           }}
         >
-          <ul className="flex gap-8 list-none mt-0 relative bottom-10 sm:bottom-[100px] ">
+          <ul className="flex gap-8 list-none mt-0 relative bottom-10">
             <li className="flex flex-wrap gap-8 h-28">
               <ul className="bg-gradient-to-r from-indigo-900 via-indigo-600 to-indigo-400 rounded p-2">Next JS</ul>
               <ul className="bg-gradient-to-r from-indigo-500 via-indigo-800 to-indigo-600 rounded p-2">Nest JS</ul>
