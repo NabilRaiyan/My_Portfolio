@@ -43,7 +43,7 @@ const Hero = () => {
         <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8">
         
         {/* First Div */}
-        <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center p-4">
+        <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center pr-4 pl-4">
             {/* horizontal row and bubble  */}
             <hr className="fixed left-10 top-[320px] transform -translate-y-1/2 w-1/2 md:w-1/3" id="line" />
             <div
@@ -53,15 +53,15 @@ const Hero = () => {
                 className="fixed left-[10.6rem] top-[300px] w-2 h-2 bg-purple-400 rounded-full animate-movePingPong2"
             />
             <div
-                className="fixed left-[20.6rem] top-[400px] w-2 h-2 bg-orange-100 rounded-full animate-movePingPong3"
+                className="fixed left-[20.6rem] top-[400px] w-2 h-2 bg-orange-400 rounded-full animate-movePingPong3"
             />
 
             {/* Download button for cv */}
-            <div className="absolute top-1 right-10 m-4 p-2 rounded-sm">
+            <div className="absolute top-1 right-10 m-4 p-2 rounded-sm flex flex-auto justify-center items-end">
             <a 
                 href="https://ciwzssxdlrxawjaswmff.supabase.co/storage/v1/object/public/files/public/CVPR%20paper.pdf" 
                 download="cv" 
-                className="text-cyan-300 font-poppins text-xl font-thin flex items-center space-x-2"
+                className="text-cyan-300 font-poppins text-[1rem] font-medium hover:text-orange-400 flex items-center space-x-2"
             >
                 <span>Download CV</span>
                 <span><FaDownload /></span>
@@ -69,7 +69,7 @@ const Hero = () => {
             </div>
 
             {/* Social media div */}
-            <div className="flex flex-row gap-2 top-[50px] fixed sm:justify-center sm:items-center left-16">
+            <div className="flex flex-row gap-2 top-[50px] sm:justify-center sm:items-center left-16">
 
                 <div>
                     <SocialMediaBtn link="https://github.com/NabilRaiyan" icon={<FaGithub />} />
