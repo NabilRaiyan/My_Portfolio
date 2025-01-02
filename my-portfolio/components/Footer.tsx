@@ -3,11 +3,14 @@
 import CustomButton from "./ui/CustomButton";
 import { FaLocationArrow } from "react-icons/fa";
 
-// Get current year
-const currentYear = new Date().getFullYear();
 
 // Footer section
 const Footer = () => {
+
+
+  // Get current year
+  const currentYear = new Date().getFullYear();
+
   return (
     // Creating footer main div
     <footer 
