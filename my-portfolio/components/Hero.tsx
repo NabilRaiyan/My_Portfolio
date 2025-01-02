@@ -39,7 +39,7 @@ const Hero = () => {
     ];
 
     return (
-        <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8">
+        <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8" id="hero">
         
         {/* First Div */}
         <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center pr-4 pl-4">

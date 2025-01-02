@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     // Creating footer main div
     <footer 
-      className="mt-8 sm:mt-8 md:mt-12 lg:mt-16 px-4 sm:px-6 md:px-8 lg:px-10 bg-[url('/images/footer-grid.svg')] bg-cover bg-center"
+      className="mt-8 sm:mt-8 md:mt-12 lg:mt-16 px-4 sm:px-6 md:px-8 lg:px-10 bg-[url('/images/footer-grid.svg')] bg-cover bg-center" id="contact"
     >
       {/* Heading */}
       <h1 className="text-3xl sm:text-4xl md:text-[3.2rem] lg:text-4xl xl:text-[3rem] font-poppins font-extralight text-white text-center mt-12 sm:mt-16 leading-snug">

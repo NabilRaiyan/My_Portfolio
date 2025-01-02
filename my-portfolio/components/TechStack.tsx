@@ -44,7 +44,7 @@ import { LampContainer } from "./ui/lamp";
 
     const TechStack = () => { 
         return (
-            <div className="relative mt-[100px] mb-[50px] w-full h-auto items-center justify-center">
+            <div className="relative mt-[100px] mb-[50px] w-full h-auto items-center justify-center" id="about">
             <LampContainer>
                 <motion.h1
                     initial={{ opacity: 0.5, y: 100 }}

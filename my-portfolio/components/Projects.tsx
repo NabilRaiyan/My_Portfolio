@@ -71,7 +71,7 @@ const Projects = () => {
   }
 
   return (
-    <div className="justify-center items-center sm:justify-center sm:items-center">
+    <div className="justify-center items-center sm:justify-center sm:items-center" id="projects">
       <h1 className="text-4xl mb-10 sm:text-5xl md:text-[3.2rem] lg:text-4xl xl:text-[3rem] font-poppins font-extralight text-white text-center mt-[100px]">
         Some Of My <span className="text-cyan-300">Projects</span>
       </h1>
