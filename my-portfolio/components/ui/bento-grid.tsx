@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import CustomButton from "./CustomButton";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import animationData from '../../data/confetti.json';
 import { IoCopyOutline } from "react-icons/io5";
 import { WorldMap } from "./world-map";
