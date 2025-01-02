@@ -1,4 +1,3 @@
-"use client"
 
 import Approach from "@/components/Approach";
 import Hero from "@/components/Hero";

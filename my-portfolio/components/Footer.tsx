@@ -1,4 +1,3 @@
-"use client";
 
 import CustomButton from "./ui/CustomButton";
 import { FaLocationArrow } from "react-icons/fa";
