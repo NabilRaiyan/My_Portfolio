@@ -2,11 +2,11 @@
 
 import { cn } from "@/lib/utils";
 import CustomButton from "./CustomButton";
-import { useState } from "react";
-import animationData from '../../data/confetti.json';
+import { useState, useEffect, useState as useClientState } from "react";
+import animationData from '../../../data/confetti.json';
 import { IoCopyOutline } from "react-icons/io5";
 import { WorldMap } from "./world-map";
-import dynamic from "next/dynamic"; // Import dynamic from Next.js
+import dynamic from "next/dynamic";
 
 // Dynamically import Lottie with SSR disabled
 const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
@@ -48,6 +48,13 @@ export const BentoGridItem = ({
   imgClassName?: string;
 }) => {
   const [copied, setCopied] = useState(false);
+  const [isClient, setIsClient] = useClientState(false);
+
+  // Ensure Lottie is only used on the client-side
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const handleCopy = () => {
     navigator.clipboard.writeText('raiyanalsultan@gmail.com');
     setCopied(true);
@@ -79,22 +86,26 @@ export const BentoGridItem = ({
             </ul>
           </div>);
       case 3:
-        return <div className="text-lg font-bold">
-          <div className={`absolute`}>
-            <Lottie options={{
-              loop: copied,
-              autoplay: copied,
-              animationData: animationData,
-              rendererSettings: {
-                preserveAspectRatio: 'xMidYMid slice'
-              }
-            }} />
+        return (
+          <div className="text-lg font-bold">
+            {isClient && (
+              <div className={`absolute`}>
+                <Lottie options={{
+                  loop: copied,
+                  autoplay: copied,
+                  animationData: animationData,
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice'
+                  }
+                }} />
+              </div>
+            )}
+            <CustomButton text={copied ? 'Email Copied' : "Copy My Email"}
+                          icon={<IoCopyOutline />}
+                          handleClick={handleCopy}
+            />
           </div>
-          <CustomButton text={copied ? 'Email Copied' : "Copy My Email"}
-            icon={<IoCopyOutline />}
-            handleClick={handleCopy}
-          />
-        </div>;
+        );
       case 4:
         return (
           <div className="w-full relative bottom-[178px]">

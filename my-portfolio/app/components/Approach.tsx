@@ -2,7 +2,7 @@
 
 import React from "react";
 import ApproachCard from "./ui/Card";
-import approach_data from '../data/data.json'
+import approach_data from '../../data/data.json'
 
 
 // Approach function

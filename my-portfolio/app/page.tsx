@@ -1,11 +1,11 @@
 
-import Approach from "@/components/Approach";
-import Hero from "@/components/Hero";
-import Project from "@/components/Projects";
-import TechStack from "@/components/TechStack";
-import { FloatingNav } from "@/components/ui/floating-navbar";
+import Approach from "@/app/components/Approach";
+import Hero from "@/app/components/Hero";
+import Project from "@/app/components/Projects";
+import TechStack from "@/app/components/TechStack";
+import { FloatingNav } from "@/app/components/ui/floating-navbar";
 import {FaHome, FaPhone} from 'react-icons/fa'
-import Footer from "@/components/Footer";
+import Footer from "@/app/components/Footer";
 
 export default function Home() {
   return (
