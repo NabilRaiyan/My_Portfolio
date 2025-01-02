@@ -6,6 +6,7 @@ import CustomButton from "./ui/CustomButton";
 import SocialMediaBtn from "./ui/SocialMediaBtn";
 import { FaGithub, FaFacebook, FaLinkedin, FaMedium, FaDownload } from "react-icons/fa";
 
+
 // Hero function
 const Hero = () => {
 
@@ -39,7 +40,7 @@ const Hero = () => {
     ];
 
     return (
-        <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8" id="hero">
+        <div className="relative bg-black flex flex-col md:flex-row pt-10 md:pt-20 gap-8" id="home">
         
         {/* First Div */}
         <div className="w-full md:w-[700px] h-[300px] md:h-[300px] flex flex-col justify-center items-center pr-4 pl-4">

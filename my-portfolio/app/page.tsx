@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="relative bg-black flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <FloatingNav navItems={[
-        {name: 'Home', link: '#hero', icon: <FaHome /> },
+        {name: 'Home', link: '#home', icon: <FaHome /> },
         {name: 'Projects', link: '#projects', icon: < FaHome/> },
         {name: 'My Approach', link: '#approach', icon: <FaPhone /> },
         {name: 'About', link: '#about', icon: <FaPhone /> },
