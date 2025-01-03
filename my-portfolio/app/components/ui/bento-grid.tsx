@@ -53,7 +53,7 @@ export const BentoGridItem = ({
   // Ensure Lottie is only used on the client-side
   useEffect(() => {
     setIsClient(true);
-  }, []);
+  }, [setIsClient]);
 
   const handleCopy = () => {
     navigator.clipboard.writeText('raiyanalsultan@gmail.com');
