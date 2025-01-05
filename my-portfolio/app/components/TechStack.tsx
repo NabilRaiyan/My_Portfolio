@@ -3,6 +3,7 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid"
 import { motion } from "framer-motion";
 import { LampContainer } from "./ui/lamp";
 
+    // skeleton
     const Skeleton = () => (
     <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-transparent dark:border-white/[0.2]"></div>);
     const items = [
