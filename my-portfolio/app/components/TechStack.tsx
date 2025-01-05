@@ -41,6 +41,7 @@ import { LampContainer } from "./ui/lamp";
         },
     ];
 
+    // Techstack method
     const TechStack = () => { 
         return (
             <div className="relative mt-[100px] mb-[50px] w-full h-auto items-center justify-center" id="about">
