@@ -122,4 +122,6 @@ const Projects = () => {
   );
 };
 
+
+// exporting Project function
 export default Projects;
