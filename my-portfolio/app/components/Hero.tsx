@@ -10,7 +10,6 @@ import { FaGithub, FaFacebook, FaLinkedin, FaMedium, FaDownload } from "react-ic
 // Hero function
 const Hero = () => {
 
-
     // intro text
     const intro = [
         {
@@ -115,5 +114,5 @@ const Hero = () => {
     )
 }
 
-// export hero section
+// exporting hero section
 export default Hero
