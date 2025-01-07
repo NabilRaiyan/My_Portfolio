@@ -5,8 +5,6 @@ import { FaLocationArrow } from "react-icons/fa";
 
 // Footer section
 const Footer = () => {
-
-
   // Get current year
   const currentYear = new Date().getFullYear();
 
@@ -46,5 +44,5 @@ const Footer = () => {
   );
 };
 
-// Exporting footer
+// Exporting footer section
 export default Footer;
