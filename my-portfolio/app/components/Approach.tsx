@@ -5,7 +5,7 @@ import ApproachCard from "./ui/Card";
 import approach_data from '../../data/data.json'
 
 
-// Approach function
+// Approach function 
 const Approach = () => {
   return (
     <section className="justify-center items-center sm:justify-center sm:items-center" id="approach">
